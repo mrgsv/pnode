@@ -1,0 +1,5 @@
+torchdyn==1.0.1
+dgl==0.6.1 # or dgl-cu102=0.8.1
+torch==1.9.1
+numpy==1.22.3
+tqdm==4.64.0

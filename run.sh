@@ -1,0 +1,11 @@
+#!/bin/sh
+echo "Cora"
+python run_experiments.py --n-experiments 100 --n-epochs 3000 --device cuda  --verbose 0 --dataset Cora --pnode-type-and-params constant 0 --lr 1e-3 --weight-decay 5e-4 --path-to-save-results ./results_noisy --solver rk4 --num-layers 2 --hidden-size 64 --gcn-hidden-size 64 --dropout 0.4 --gcn-dropout 0.9 --return-t-eval False --noise-rate 0
+python run_experiments.py --n-experiments 100 --n-epochs 3000 --device cuda  --verbose 0 --dataset Cora --pnode-type-and-params constant 0.5 --lr 1e-3 --weight-decay 5e-4 --path-to-save-results ./results_noisy --solver rk4 --num-layers 2 --hidden-size 64 --gcn-hidden-size 64 --dropout 0.4 --gcn-dropout 0.9 --return-t-eval False --noise-rate 0
+python run_experiments.py --n-experiments 100 --n-epochs 3000 --device cuda  --verbose 0 --dataset Cora --pnode-type-and-params constant 1 --lr 1e-3 --weight-decay 5e-4 --path-to-save-results ./results_noisy --solver rk4 --num-layers 2 --hidden-size 64 --gcn-hidden-size 64 --dropout 0.4 --gcn-dropout 0.9 --return-t-eval False --noise-rate 0
+
+
+echo "Citeseer"
+python run_experiments.py --n-experiments 100 --n-epochs 3000 --device cuda  --verbose 0 --dataset Citeseer --pnode-type-and-params constant 0 --lr 1e-3 --weight-decay 5e-4 --path-to-save-results ./results_noisy --solver rk4 --num-layers 2 --hidden-size 64 --gcn-hidden-size 64 --dropout 0.4 --gcn-dropout 0.9 --return-t-eval False --noise-rate 0
+python run_experiments.py --n-experiments 100 --n-epochs 3000 --device cuda  --verbose 0 --dataset Citeseer --pnode-type-and-params constant 0.5 --lr 1e-3 --weight-decay 5e-4 --path-to-save-results ./results_noisy --solver rk4 --num-layers 2 --hidden-size 64 --gcn-hidden-size 64 --dropout 0.4 --gcn-dropout 0.9 --return-t-eval False --noise-rate 0
+python run_experiments.py --n-experiments 100 --n-epochs 3000 --device cuda  --verbose 0 --dataset Citeseer --pnode-type-and-params constant 1 --lr 1e-3 --weight-decay 5e-4 --path-to-save-results ./results_noisy --solver rk4 --num-layers 2 --hidden-size 64 --gcn-hidden-size 64 --dropout 0.4 --gcn-dropout 0.9 --return-t-eval False --noise-rate 0
